@@ -56,7 +56,7 @@
     "ember-source": "~5.2.0-beta.3",
     "ember-source-channel-url": "^3.0.0",
     "ember-template-lint": "^5.11.0",
-    "ember-try": "^2.0.0",
+    "ember-try": "github:NullVoxPopuli/ember-try#update-pnpm-behavior-based-on-blah-blah",
     "eslint": "^8.44.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-ember": "^11.9.0",

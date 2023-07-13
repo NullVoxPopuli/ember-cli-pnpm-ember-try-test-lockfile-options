@@ -82,8 +82,8 @@ devDependencies:
     specifier: ^5.11.0
     version: 5.11.0
   ember-try:
-    specifier: ^2.0.0
-    version: 2.0.0
+    specifier: github:NullVoxPopuli/ember-try#update-pnpm-behavior-based-on-blah-blah
+    version: github.com/NullVoxPopuli/ember-try/3b93e87b253a68e0484b5ff133b77759606dc33e
   eslint:
     specifier: ^8.44.0
     version: 8.44.0
@@ -1562,7 +1562,7 @@ packages:
       '@glimmer/env': 0.1.7
       '@glimmer/util': 0.44.0
       broccoli-file-creator: 2.1.1
-      broccoli-merge-trees: 4.2.0
+      broccoli-merge-trees: 3.0.2
       ember-cli-babel: 7.26.11
       ember-cli-get-component-path-option: 1.0.0
       ember-cli-is-package-missing: 1.0.0
@@ -3013,6 +3013,7 @@ packages:
       walk-sync: 2.2.0
     transitivePeerDependencies:
       - supports-color
+    dev: true
 
   /broccoli-kitchen-sink-helpers@0.2.9:
     resolution: {integrity: sha512-C+oEqivDofZv/h80rgN4WJkbZkbfwkrIeu8vFn4bb4m4jPd3ICNNplhkXGl3ps439pzc2yjZ1qIwz0yy8uHcQg==}
@@ -4311,7 +4312,7 @@ packages:
       babel-plugin-module-resolver: 3.2.0
       broccoli-babel-transpiler: 7.8.1
       broccoli-debug: 0.6.5
-      broccoli-funnel: 3.0.8
+      broccoli-funnel: 2.0.2
       broccoli-source: 2.1.2
       calculate-cache-key-for-tree: 2.0.0
       clone: 2.1.2
@@ -4321,7 +4322,7 @@ packages:
       fixturify-project: 1.10.0
       resolve-package-path: 3.1.0
       rimraf: 3.0.2
-      semver: 7.5.4
+      semver: 5.7.2
     transitivePeerDependencies:
       - supports-color
 
@@ -4911,25 +4912,6 @@ packages:
       semver: 7.5.4
     transitivePeerDependencies:
       - encoding
-    dev: true
-
-  /ember-try@2.0.0:
-    resolution: {integrity: sha512-2N7Vic45sbAegA5fhdfDjVbEVS4r+ze+tTQs2/wkY+8fC5yAGHfCM5ocyoTfBN5m7EhznC3AyMsOy4hLPzHFSQ==}
-    engines: {node: 10.* || 12.* || >= 14.*}
-    dependencies:
-      chalk: 4.1.2
-      cli-table3: 0.6.3
-      core-object: 3.1.5
-      debug: 4.3.4
-      ember-try-config: 4.0.0
-      execa: 4.1.0
-      fs-extra: 9.1.0
-      resolve: 1.22.2
-      rimraf: 3.0.2
-      walk-sync: 2.2.0
-    transitivePeerDependencies:
-      - encoding
-      - supports-color
     dev: true
 
   /emoji-regex@8.0.0:
@@ -5877,6 +5859,14 @@ packages:
 
   /fs-extra@5.0.0:
     resolution: {integrity: sha512-66Pm4RYbjzdyeuqudYqhFiNBbCIuI9kgRqLPSHIlXHidW8NIQtVdkM1yeZ4lXwuhbTETv3EUGMNHAAw6hiundQ==}
+    dependencies:
+      graceful-fs: 4.2.11
+      jsonfile: 4.0.0
+      universalify: 0.1.2
+    dev: true
+
+  /fs-extra@6.0.1:
+    resolution: {integrity: sha512-GnyIkKhhzXZUWFCaJzvyDLEEgDkPfb4/TPvJCJVuS8MWZgoSsErf++QpiAlDnKFcqhRlm+tIOcencCjyJE6ZCA==}
     dependencies:
       graceful-fs: 4.2.11
       jsonfile: 4.0.0
@@ -10513,4 +10503,25 @@ packages:
   /yocto-queue@1.0.0:
     resolution: {integrity: sha512-9bnSc/HEW2uRy67wc+T8UwauLuPJVn28jb+GtJY16iiKWyvmYJRXVT4UamsAEGQfPohgr2q4Tq0sQbQlxTfi1g==}
     engines: {node: '>=12.20'}
+    dev: true
+
+  github.com/NullVoxPopuli/ember-try/3b93e87b253a68e0484b5ff133b77759606dc33e:
+    resolution: {tarball: https://codeload.github.com/NullVoxPopuli/ember-try/tar.gz/3b93e87b253a68e0484b5ff133b77759606dc33e}
+    name: ember-try
+    version: 3.0.0-beta.1
+    engines: {node: 14.* || 16.* || >= 18.*}
+    dependencies:
+      chalk: 4.1.2
+      cli-table3: 0.6.3
+      core-object: 3.1.5
+      debug: 4.3.4
+      ember-try-config: 4.0.0
+      execa: 4.1.0
+      fs-extra: 6.0.1
+      resolve: 1.22.2
+      rimraf: 3.0.2
+      walk-sync: 2.2.0
+    transitivePeerDependencies:
+      - encoding
+      - supports-color
     dev: true
