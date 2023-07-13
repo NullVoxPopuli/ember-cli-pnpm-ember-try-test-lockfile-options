@@ -83,7 +83,7 @@ devDependencies:
     version: 5.11.0
   ember-try:
     specifier: github:NullVoxPopuli/ember-try#update-pnpm-behavior-based-on-blah-blah
-    version: github.com/NullVoxPopuli/ember-try/3b93e87b253a68e0484b5ff133b77759606dc33e
+    version: github.com/NullVoxPopuli/ember-try/86b193c7d346329d481a319a8af5c4c29ddf469d
   eslint:
     specifier: ^8.44.0
     version: 8.44.0
@@ -1562,7 +1562,7 @@ packages:
       '@glimmer/env': 0.1.7
       '@glimmer/util': 0.44.0
       broccoli-file-creator: 2.1.1
-      broccoli-merge-trees: 3.0.2
+      broccoli-merge-trees: 4.2.0
       ember-cli-babel: 7.26.11
       ember-cli-get-component-path-option: 1.0.0
       ember-cli-is-package-missing: 1.0.0
@@ -10505,8 +10505,8 @@ packages:
     engines: {node: '>=12.20'}
     dev: true
 
-  github.com/NullVoxPopuli/ember-try/3b93e87b253a68e0484b5ff133b77759606dc33e:
-    resolution: {tarball: https://codeload.github.com/NullVoxPopuli/ember-try/tar.gz/3b93e87b253a68e0484b5ff133b77759606dc33e}
+  github.com/NullVoxPopuli/ember-try/86b193c7d346329d481a319a8af5c4c29ddf469d:
+    resolution: {tarball: https://codeload.github.com/NullVoxPopuli/ember-try/tar.gz/86b193c7d346329d481a319a8af5c4c29ddf469d}
     name: ember-try
     version: 3.0.0-beta.1
     engines: {node: 14.* || 16.* || >= 18.*}
